@@ -19,14 +19,14 @@ public class Ronin extends Humain {
 		int rep=adversaire.getReputation();
 		if (force>=rep) {
 		    honneur+=1;
-		    parler("- Je t'ai retrouvé vermine, tu vas payer pour ce que tu as fait à ce pauvre marchand!");
+		    parler(this.getNom()+" - Je t'ai retrouvé vermine, tu vas payer pour ce que tu as fait à ce pauvre marchand!");
 		    parler("- Je t’ai eu petit yakusa!");
 		    int x=adversaire.perdre();
 		    argent+=x;
 			}
 		else {
 			honneur-=1;
-			parler("- J'ai perdu contre ce yakuza, mon honneur et ma bourse ont en pris un coup.");
+			parler(this.getNom()+" - J'ai perdu contre ce yakuza, mon honneur et ma bourse ont en pris un coup.");
 			adversaire.gagner(argent);
 			argent=0;
 			}

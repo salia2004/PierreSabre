@@ -29,6 +29,11 @@ public class Yakuzas extends Humain
     	return somme;
 
     }
+    public void direBonjour() {
+		parler(this.nom +" : Bonjour ! Je m’appelle "+  this.nom  + " et j’aime boire du  "+ this.boissonFavorite);
+		parler(this.nom + "Mon clan est celui de "+ this.clan );
+
+	}
     public void gagner(int gain) {
     	reputation+=1;
     	argent+=gain;
